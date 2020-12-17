@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route, Link, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-router-dom';
 import A from './A';
 import B from './B';
 import C from './C';
