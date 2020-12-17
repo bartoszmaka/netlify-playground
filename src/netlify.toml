@@ -1,1 +1,51 @@
 CI = false
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy= "strict-origin"
+    Strict-Transport-Security= "max-age=63072000; includeSubDomains; preload"
+
+[[redirects]]
+    from = "/styles/*"
+    to = "/styles/:splat"
+    status = 200
+    force = true
+
+[[redirects]]
+    from = "/assets/*"
+    to = "/assets/:splat"
+    status = 200
+    force = true
+
+[[redirects]]
+    from = "/fonts/*"
+    to = "/fonts/:splat"
+    status = 200
+    force = true
+
+[[redirects]]
+    from = "/images/*"
+    to = "/images/:splat"
+    status = 200
+    force = true
+
+[[redirects]]
+    from = "/scripts/*"
+    to = "/scripts/:splat"
+    status = 200
+    force = true
+
+[[redirects]]
+    from = "/robots.txt"
+    to = "/robots.txt"
+    status = 200
+    force = true
+
+[[redirects]]
+    from = "/*"
+    to = "/index.html"
+    status = 200
+    force = true
